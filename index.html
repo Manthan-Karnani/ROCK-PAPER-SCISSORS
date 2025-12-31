@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock paper scissors</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="arcade-bg">
+    <h1 class="title">ROCK PAPER SCISSORS</h1>
+
+    <div class="mainBlock">
+        <div class="signs">
+            <div class="human">
+                <div class="imageplace" id="humanSide"><img src="https://p1.hiclipart.com/preview/409/584/855/smiley-face-emoji-light-skin-man-gesture-emoticon-human-skin-color-male-png-clipart.jpg" alt=""></div>
+                
+                <div class="playerInfo">You</div>
+                
+                
+            </div>
+            <div class="vs">V/S</div>
+
+            <div class="human">
+                <div class="imageplace" id="computerSide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHwsXmuQu4cCqzK7bSR4nlPAWelPqNbO94DA&s" alt=""></div>
+                <div class="playerInfo" >Computer</div>
+                
+            </div>
+
+        </div>
+
+        <div class="choice">
+            <button class="signChoice"  onclick="
+                 computerMove=compMove();
+                 resultCheck=resultCalculate('rock',computerMove);
+                 scoreUpdate();
+                 
+                 messageUpdate('Rock');
+                 imageUpdater('rock');
+                
+
+                " >ROCK</button>
+
+
+            <button class="signChoice" onclick="
+             computerMove=compMove();
+             resultCheck=resultCalculate('paper',computerMove);
+             scoreUpdate();
+                 messageUpdate('Paper');
+                 imageUpdater('paper');
+            
+
+            " >PAPER</button>
+
+
+            <button class="signChoice" onclick="
+             computerMove=compMove();
+             resultCheck=resultCalculate('scissors',computerMove);
+             scoreUpdate();
+                 messageUpdate('Scissors');
+                 imageUpdater('scissor');
+
+            ">SCISSORS</button>
+
+        </div>
+
+        <div class="result">
+            WELCOME TO THE GAME!!!!
+        </div>
+
+        <div class="score">
+            WINS: 0   LOSS: 0   TIES: 0
+
+        </div>
+
+
+
+    </div>
+ 
+    </div>
+  
+<script src="app.js"></script>
+</body>
+</html>
